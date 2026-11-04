@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "MenuMind",
+    "slug": "MenuMind",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0E17"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "MenuMind needs camera access to scan restaurant menus",
+        "NSLocationWhenInUseUsageDescription": "MenuMind uses your location to identify and cache restaurant menus"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0E17"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ],
+      "package": "com.anonymous.MenuMind"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "MenuMind needs camera access to scan restaurant menus"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "MenuMind uses your location to identify and cache restaurant menus"
+        }
+      ]
+    ]
+  }
+}
